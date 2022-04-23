@@ -1,0 +1,169 @@
+body{
+	margin: 0;	
+}
+
+.principal{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: flex-start;
+}
+
+.icon a:link {
+  color:white;
+  text-decoration:none;
+}
+.icon a:visited {
+  color:white;
+  text-decoration:none;
+}
+.icon a:hover {
+  color: gray !important;
+}
+.icon a:active {
+  color:white;
+  background-color:whitesmoke;
+}
+
+.header{
+	background-color:rgb(41, 41, 41) ;
+	width:100% ;
+	height:14vh ;
+	color: white;
+}
+
+.ctrHeader{
+	justify-content: space-between;
+	display: flex;
+}
+
+.azul{
+	/*background-color: blue;*/
+	width: 20vw;
+	height: 14vh;
+	display: flex;
+	justify-content: space-evenly	;
+
+}
+
+
+.logo{
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	font-style: American Typewriter, serif;
+}
+
+.srch{
+	display: flex;
+	align-items: center;
+
+}
+
+.cor{
+	background-color:rgb(41, 41, 41) ;
+}
+
+.about{
+	display: flex;
+	align-items: center;
+}
+
+.icon{
+	display: flex;
+	align-items: center;
+}
+
+.cssprod{
+	padding-top: 1.95em;
+	padding-bottom: 1.95em;
+	text-align: center;
+
+		}
+
+.footer{
+	background-color:rgb(41, 41, 41) ;
+	width:100% ;
+	height:7vh ;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	margin-top: 59px;
+	align-self: flex-end;
+}
+
+.vermelho{
+	width: 15vw;
+	height: 7vh;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	justify-content: space-around;
+}
+
+.pagin{
+	align-items: center;
+	width: 100vw;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
+}
+
+.blackicon{
+	display: flex;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+}
+
+.blackicon a:visited{
+	color: rgb(41, 41, 41)
+}
+.blackicon a:link {
+	color: rgb(41, 41, 41);
+	text-decoration:none;
+}
+.blackicon a:hover {
+	color: gray !important;
+}
+.blackicon a:active {
+	color:rgb(41, 41, 41);
+	background-color:whitesmoke;
+}
+
+.estica{
+	flex-grow: 1;
+}
+.bkg{
+	background-color: darkgray;
+}
+
+.csspromo{
+	
+	background-color: red;
+	top: -10px;
+	overflow: hidden;
+
+}
+
+.login{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content:space-evenly;
+
+}
+
+.partslogin{
+	align-items: center;
+	text-align: center;
+
+}
+.risco{
+	background-color: black;
+	width: 1px;
+	height: 45%;
+}
