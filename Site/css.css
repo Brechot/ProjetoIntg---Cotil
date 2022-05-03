@@ -94,7 +94,7 @@ body{
 }
 
 .vermelho{
-	width: 15vw;
+	width: 20vw;
 	height: 7vh;
 	display: flex;
 	align-items: center;
@@ -166,4 +166,5 @@ body{
 	background-color: black;
 	width: 1px;
 	height: 45%;
+
 }
