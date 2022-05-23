@@ -36,7 +36,7 @@ body{
 .logo a:hover {
   color: gray !important;
 }
-.logo a:active {
+.icon a:active {
   color:white;
   background-color:whitesmoke;
 }

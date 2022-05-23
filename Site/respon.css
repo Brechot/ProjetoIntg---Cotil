@@ -37,4 +37,12 @@
 		margin-right: auto;
 		font-size: 8px;
 	}
+	.login{
+		flex-direction: column;
+	}
+	.risco{
+		width: 1px;
+		height: 0%;
+		width: 45%;
+	}
 }
