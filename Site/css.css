@@ -25,6 +25,22 @@ body{
   background-color:whitesmoke;
 }
 
+.logo a:link {
+  color:white;
+  text-decoration:none;
+}
+.logo a:visited {
+  color:white;
+  text-decoration:none;
+}
+.logo a:hover {
+  color: gray !important;
+}
+.logo a:active {
+  color:white;
+  background-color:whitesmoke;
+}
+
 .header{
 	background-color:rgb(41, 41, 41) ;
 	width:100% ;

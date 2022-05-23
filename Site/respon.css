@@ -4,6 +4,19 @@
 		
 		display: none;
 	}
+	.azul{
+		display: none;
+	}
+	.amarelo1{
+	/*background-color: yellow;*/
+	width: 100vw;
+	height: 9vh;
+	display: flex;
+	align-items: center;
+	}
+	.amarelo2{
+		font-size: 30px;
+	}
 	
 }
 
@@ -22,5 +35,6 @@
 	.central{
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 8px;
 	}
 }
