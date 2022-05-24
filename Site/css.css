@@ -83,6 +83,7 @@ body{
 .about{
 	display: flex;
 	align-items: center;
+
 }
 
 .icon{
@@ -107,7 +108,23 @@ body{
 	bottom: 0;
 	margin-top: 59px;
 	align-self: flex-end;
+
 }
+
+.footer2{
+	background-color:rgb(41, 41, 41) ;
+	width:100% ;
+	height:7vh ;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	margin-top: 59pxrem;
+	align-self: flex-end;
+	position: absolute;
+	
+}
+
 
 .vermelho{
 	width: 20vw;
@@ -186,4 +203,8 @@ body{
 }
 .cssfav{
 	margin-top: 2rem;
+	color: black;
+}
+.csscompra{
+	margin-top: 3rem;
 }
