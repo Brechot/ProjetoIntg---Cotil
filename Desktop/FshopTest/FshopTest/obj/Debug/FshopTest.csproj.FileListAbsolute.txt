@@ -1,0 +1,15 @@
+C:\c#\FshopTest\FshopTest\bin\Debug\FshopTest.exe.config
+C:\c#\FshopTest\FshopTest\bin\Debug\FshopTest.exe
+C:\c#\FshopTest\FshopTest\bin\Debug\FshopTest.pdb
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.csproj.AssemblyReference.cache
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.csproj.SuggestedBindingRedirects.cache
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Form1.resources
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Properties.Resources.resources
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.csproj.GenerateResource.cache
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.csproj.CoreCompileInputs.cache
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.exe
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.pdb
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Menu.resources
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Cliente.resources
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Fornecedores.resources
+C:\c#\FshopTest\FshopTest\obj\Debug\FshopTest.Funcionario.resources
