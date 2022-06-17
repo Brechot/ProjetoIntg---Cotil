@@ -208,7 +208,7 @@
 			<button type="reset" class="btn btn-dark" onclick=Limpar();>Limpar</button>
 		  </div>
 		  <div class="col-md-2">
-			  <sub>(*) Campos Obrigatórios</sub>
+			  <sub><i>(*) Campos Obrigatórios</i></sub>
 			</div>
 	  </div>
   </div>
@@ -436,13 +436,16 @@
 						document.getElementById("senhaS").style.Color = "";
 						document.getElementById("csenhaS").style.Color = "";
 					}
-
+					if(nome!=0 && sobre!=0 && email!=0 && endereco!=0 && cep!=0 && idade>=18 && cpf!=0 && sexo!=0 && rg!=0 && data!=0 && tel1!=0 && senha!=0 && csenha!=0 && senha==csenha){
 					swal({
-					title: "Good job!",
-					text: "You clicked the button!",
+					title: "Cadastro Realizado!",
+					text: "Você sera direcionado para Home",
 					icon: "success",
-					button: "Aww yiss!",
+					button: "Continuar"
 					});
+
+					
+				}
 
 				}
 
