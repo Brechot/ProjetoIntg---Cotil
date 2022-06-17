@@ -264,16 +264,9 @@
 </body>
 <script type="text/javascript" src="jq/jquery-3.6.0.js"></script>
 		<script type="text/javascript" src="jq/jquery.mask.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/sweetalert2@11">
-					Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'Your work has been saved',
-					showConfirmButton: false,
-					timer: 1500
-					})
-		</script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script type="text/javascript">
+			
 			jQuery(function($){
 				$("#cpf").mask("999.999.999-99");
 				$("#cep").mask("99.999-999");
@@ -318,7 +311,7 @@
 				var senha = document.getElementById("senha").value;
 				var csenha = document.getElementById("csenha").value;
 				
-
+				
 					if(nome==0){
 						
 						document.getElementById("nomeS").innerHTML = "❌"
@@ -443,8 +436,13 @@
 						document.getElementById("senhaS").style.Color = "";
 						document.getElementById("csenhaS").style.Color = "";
 					}
-					
 
+					swal({
+					title: "Good job!",
+					text: "You clicked the button!",
+					icon: "success",
+					button: "Aww yiss!",
+					});
 
 				}
 
