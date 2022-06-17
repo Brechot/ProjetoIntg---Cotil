@@ -9,19 +9,7 @@
 				<script src="https://kit.fontawesome.com/9fefcf6978.js" crossorigin="anonymous"></script>
 	<title>Cadastro</title>
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<script type="text/javascript" src="jq/jquery-3.6.0.js"></script>
-		<script type="text/javascript" src="jq/jquery.mask.js"></script>
-		<script type="text/javascript">
-			jQuery(function($){
-				$("#cpf").mask("999.999.999-99");
-				$("#cep").mask("99.999-999");
-				$("#rg").mask("99.999.999-9");
-				$("#idade").mask("99");
-				$("#data").mask("99/99/9999");
-				$("#tel1").mask("(99) 9 9999-9999");
-				$("#tel2").mask("(99) 9 9999-9999");
-				});	
-		</script>
+		
 </head>
 <body class="bkg">
 	<div class="principal">
@@ -97,26 +85,27 @@
 
 <div class="estica">
 	<div class="container" style="margin-top: 40px;">
+	<form>
 	  <div class="row align-items-start csscadastro">
 	    <div class="col-md-3">
 	    	Nome:<br>
 			<div class="input-group mb-3">
-				<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				<span class="input-group-text" id="nomeS">*</span>
+				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="nome">
 			  </div>
 	    </div>
 	    <div class="col-md-3">
 	      Sobrenome:<br>
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<span class="input-group-text" id="sobreS">*</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="sobre">
 		  </div>
 	    </div>
 	    <div class="col-md-4">
 	      E-mail:<br>
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<span class="input-group-text" id="emailS">*</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email">
 		  </div>
 	    </div>
 	  </div>
@@ -124,21 +113,21 @@
 	    <div class="col-md-4">
 	      Endereço:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<span class="input-group-text" id="enderecoS">*</span>
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="endereco">
 		  </div>
 	    </div>
 	    <div class="col-md-2">
 	      CEP:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
+			<span class="input-group-text" id="cepS">*</span>
 			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="cep">
 		  </div>
 	    </div>
 	    <div class="col-md-2">
 	      Idade:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
+			<span class="input-group-text" id="idadeS">*</span>
 			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="idade">
 		  </div>
 	    </div>
@@ -147,7 +136,7 @@
 	    <div class="col-md-2">
 	    CPF:	
 	      <div class="input-group mb-3">
-		  <span class="input-group-text" id="inputGroup-sizing-default">*</span>
+		  <span class="input-group-text" id="cpfS">*</span>
 		  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="cpf">
 		</div>
 
@@ -155,9 +144,9 @@
 	  <div class="col-md-2">
 	    Sexo:
 	    <div class="input-group mb-3">
-			<label class="input-group-text" for="inputGroupSelect01">*<!-- C/Obrigatório--></label>
-				<select class="form-select" id="inputGroupSelect01">
-					<option selected></option>
+			<label class="input-group-text" for="inputGroupSelect01" id="sexoS">*<!-- C/Obrigatório--></label>
+				<select class="form-select" id="sexo">
+					<option selected value="0"></option>
 					<option value="1">Maculino</option>
 					<option value="2">Feminino</option>
 					<option value="3">Indeterminado</option>
@@ -167,14 +156,14 @@
 	    <div class="col-md-2">
 	   	RG:
 	    <div class="input-group mb-3">
-  			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
+  			<span class="input-group-text" id="rgS">*</span>
   			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="rg">
 		</div>
 	    </div>
 		<div class="col-md-3">
 			Data de Nascimento:
 			<div class="input-group mb-3">
-			  <span class="input-group-text" id="inputGroup-sizing-default">*</span>
+			  <span class="input-group-text" id="dataS">*</span>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="data">
 		</div>
 		  </div>
@@ -183,14 +172,14 @@
 	    <div class="col-md-3">
 	      Telefone 1:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
+			<span class="input-group-text" id="tel1S">*</span>
 			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="tel1">
 	  </div>
 	    </div>
 	    <div class="col-md-3">
 	      Telefone 2:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
+			<span class="input-group-text" id="tel2S"></span>
 			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="tel2">
 	  </div>
 	    </div>
@@ -199,30 +188,31 @@
 	    <div class="col-md-4">
 	      Senha:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<span class="input-group-text" id="senhaS">*</span>
+			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="senha">
 		  </div>
 	    </div>
 	    <div class="col-md-4">
 	      Confirmar Senha:
 		  <div class="input-group mb-3">
-			<span class="input-group-text" id="inputGroup-sizing-default">*</span>
-			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			<span class="input-group-text" id="csenhaS">*</span>
+			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="csenha">
 		  </div>
 	    </div>
 	  </div>
 	  <div class="row align-items-start csscadastro">
 		<div class="col-md-1">
-			<button type="button" class="btn btn-dark">Cadastrar</button>
+			<button type="button" class="btn btn-dark" onclick=Cadastrar();>Cadastrar</button>
 		  </div>
 		  <div class="col-md-1">
-			<button type="button" class="btn btn-dark">Limpar</button>
+			<button type="reset" class="btn btn-dark" onclick=Limpar();>Limpar</button>
 		  </div>
 		  <div class="col-md-2">
 			  <sub>(*) Campos Obrigatórios</sub>
 			</div>
 	  </div>
-  </div>		
+  </div>
+</form>		
 </div>
 
 	<!-- footer-->
@@ -272,6 +262,241 @@
 	</div>
 
 </body>
+<script type="text/javascript" src="jq/jquery-3.6.0.js"></script>
+		<script type="text/javascript" src="jq/jquery.mask.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/sweetalert2@11">
+					Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'Your work has been saved',
+					showConfirmButton: false,
+					timer: 1500
+					})
+		</script>
+		<script type="text/javascript">
+			jQuery(function($){
+				$("#cpf").mask("999.999.999-99");
+				$("#cep").mask("99.999-999");
+				$("#rg").mask("99.999.999-9");
+				$("#idade").mask("99");
+				$("#data").mask("99/99/9999");
+				$("#tel1").mask("(99) 9 9999-9999");
+				$("#tel2").mask("(99) 9 9999-9999");
+				});
+
+				var nome = document.getElementById("nome").value;
+				var sobre = document.getElementById("sobre").value;
+				var email = document.getElementById("email").value;
+				var endereco = document.getElementById("endereco").value;
+				var cep = document.getElementById("cep").value;
+				var idade = document.getElementById("idade").value;
+				var cpf = document.getElementById("cpf").value;
+				var sexo = document.getElementById("sexo").value;
+				var rg = document.getElementById("rg").value;
+				var data= document.getElementById("data").value;
+				var tel1 = document.getElementById("tel1").value;
+				var tel2 = document.getElementById("tel2").value;
+				var senha = document.getElementById("senha").value;
+				var csenha = document.getElementById("csenha").value;
+
+
+				function Cadastrar(){
+
+				var nome = document.getElementById("nome").value;
+				var sobre = document.getElementById("sobre").value;
+				var email = document.getElementById("email").value;
+				var endereco = document.getElementById("endereco").value;
+				var cep = document.getElementById("cep").value;
+				var idade = document.getElementById("idade").value;
+				var cpf = document.getElementById("cpf").value;
+				var rg = document.getElementById("rg").value;
+				var sexo = document.getElementById("sexo").value;
+				var rg = document.getElementById("rg").value;
+				var data= document.getElementById("data").value;
+				var tel1 = document.getElementById("tel1").value;
+				var tel2 = document.getElementById("tel2").value;
+				var senha = document.getElementById("senha").value;
+				var csenha = document.getElementById("csenha").value;
+				
+
+					if(nome==0){
+						
+						document.getElementById("nomeS").innerHTML = "❌"
+						document.getElementById("nomeS").style.borderColor = "red";
+					}else{
+						document.getElementById("nomeS").innerHTML = "✔️"
+						document.getElementById("nomeS").style.borderColor = "green";
+					}if (sobre == 0){
+						
+						document.getElementById("sobreS").innerHTML = "❌"
+						document.getElementById("sobreS").style.borderColor = "red";
+					}else{
+						document.getElementById("sobreS").innerHTML = "✔️"
+						document.getElementById("sobreS").style.borderColor = "green";
+					}
+					if (email == 0){
+						
+						document.getElementById("emailS").innerHTML = "❌"
+						document.getElementById("emailS").style.borderColor = "red";
+					}else{
+						document.getElementById("emailS").innerHTML = "✔️"
+						document.getElementById("emailS").style.borderColor = "green";
+					}
+					if (endereco == 0){
+						document.getElementById("enderecoS").innerHTML = "❌"
+						document.getElementById("enderecoS").style.borderColor = "red";
+					}else{
+						document.getElementById("enderecoS").innerHTML = "✔️"
+						document.getElementById("enderecoS").style.borderColor = "green";
+					}
+					if (cep == 0){
+						
+						document.getElementById("cepS").innerHTML = "❌"
+						document.getElementById("cepS").style.borderColor = "red";
+					}else{
+						document.getElementById("cepS").innerHTML = "✔️"
+						document.getElementById("cepS").style.borderColor = "green";
+					}
+					if (idade <= 18){
+						
+						document.getElementById("idadeS").innerHTML = "❌"
+						document.getElementById("idadeS").style.borderColor = "red";
+					}else{
+						document.getElementById("idadeS").innerHTML = "✔️"
+						document.getElementById("idadeS").style.borderColor = "green";
+					}
+					if (cpf == 0){
+						
+						document.getElementById("cpfS").innerHTML = "❌"
+						document.getElementById("cpfS").style.borderColor = "red";
+					}else{
+						document.getElementById("cpfS").innerHTML = "✔️"
+						document.getElementById("cpfS").style.borderColor = "green";
+					}
+					if (sexo == 0){
+						
+						document.getElementById("sexoS").innerHTML = "❌"
+						document.getElementById("sexoS").style.borderColor = "red";
+					}else{
+						document.getElementById("sexoS").innerHTML = "✔️"
+						document.getElementById("sexoS").style.borderColor = "green";
+					}
+					if (rg == 0){
+						
+						document.getElementById("rgS").innerHTML = "❌"
+						document.getElementById("rgS").style.borderColor = "red";
+					}else{
+						document.getElementById("rgS").innerHTML = "✔️"
+						document.getElementById("rgS").style.borderColor = "green";
+					}
+					if (data == 0){
+						
+						document.getElementById("dataS").innerHTML = "❌"
+						document.getElementById("dataS").style.borderColor = "red";
+					}else{
+						document.getElementById("dataS").innerHTML = "✔️"
+						document.getElementById("dataS").style.borderColor = "green";
+					}
+					if (tel1 == 0){
+						
+						document.getElementById("tel1S").innerHTML = "❌"
+						document.getElementById("tel1S").style.borderColor = "red";
+					}else{
+						document.getElementById("tel1S").innerHTML = "✔️"
+						document.getElementById("tel1S").style.borderColor = "green";
+					}
+					if (senha == 0){
+						
+						document.getElementById("senhaS").innerHTML = "❌"
+						document.getElementById("senhaS").style.borderColor = "red";
+					}else{
+						document.getElementById("senhaS").innerHTML = "*";
+					}
+					if (csenha == 0){
+						
+						document.getElementById("csenhaS").innerHTML = "❌"
+						document.getElementById("csenhaS").style.borderColor = "red";
+					}else{
+						document.getElementById("csenhaS").innerHTML = "*";
+					}
+					if(senha==csenha){
+
+					}
+					if(senha == 0 || csenha == 0){
+						document.getElementById("senhaS").innerHTML = "❌"
+						document.getElementById("senhaS").style.borderColor = "red";
+						document.getElementById("csenhaS").innerHTML = "❌"
+						document.getElementById("csenhaS").style.borderColor = "red";
+					}
+					else if(senha!=csenha){
+						document.getElementById("senhaS").innerHTML = "Senhas Diferentes"
+						document.getElementById("csenhaS").innerHTML = "Senhas Diferentes"
+						document.getElementById("csenhaS").style.borderColor = "red";
+						document.getElementById("senhaS").style.borderColor = "red";
+						document.getElementById("senhaS").style.Color = "red";
+						document.getElementById("csenhaS").style.Color = "red";
+					}else{
+						document.getElementById("senhaS").innerHTML = "✔️"
+						document.getElementById("csenhaS").innerHTML = "✔️"
+						document.getElementById("csenhaS").style.borderColor = "";
+						document.getElementById("senhaS").style.borderColor = "";
+						document.getElementById("senhaS").style.Color = "";
+						document.getElementById("csenhaS").style.Color = "";
+					}
+					
+
+
+				}
+
+				function Limpar(){
+
+
+				document.getElementById("nome").innerHTML = "";
+				document.getElementById("sobre").innerHTML = "";
+				document.getElementById("email").innerHTML = "";
+				document.getElementById("endereco").innerHTML = "";
+				document.getElementById("cep").innerHTML = "";
+				document.getElementById("idade").innerHTML = "";
+				document.getElementById("cpf").innerHTML = "";	
+				document.getElementById("sexo").innerHTML = "";
+				document.getElementById("rg").innerHTML = "";
+				document.getElementById("data").innerHTML = "";
+				document.getElementById("tel1").innerHTML = "";
+				document.getElementById("tel2").innerHTML = "";
+				document.getElementById("senha").innerHTML = "";
+				document.getElementById("csenha").innerHTML = "";
+
+				document.getElementById("nomeS").innerHTML = "*";
+				document.getElementById("sobreS").innerHTML = "*";
+				document.getElementById("emailS").innerHTML = "*";
+				document.getElementById("enderecoS").innerHTML = "*";
+				document.getElementById("cepS").innerHTML = "*";
+				document.getElementById("idadeS").innerHTML = "*";
+				document.getElementById("cpfS").innerHTML = "*";	
+				document.getElementById("rgS").innerHTML = "*";
+				document.getElementById("sexoS").innerHTML = "*";
+				document.getElementById("dataS").innerHTML = "*";
+				document.getElementById("tel1S").innerHTML = "*";
+				document.getElementById("senhaS").innerHTML = "*";
+				document.getElementById("csenhaS").innerHTML = "*";
+
+				document.getElementById("nomeS").style.borderColor = "";
+				document.getElementById("sobreS").style.borderColor = "";
+				document.getElementById("emailS").style.borderColor = "";
+				document.getElementById("enderecoS").style.borderColor = "";
+				document.getElementById("cepS").style.borderColor = "";
+				document.getElementById("idadeS").style.borderColor = "";
+				document.getElementById("cpfS").style.borderColor = "";
+				document.getElementById("rgS").style.borderColor = "";
+				document.getElementById("sexoS").style.borderColor = "";
+				document.getElementById("dataS").style.borderColor = "";
+				document.getElementById("tel1S").style.borderColor = "";
+				document.getElementById("senhaS").style.borderColor = "";
+				document.getElementById("csenhaS").style.borderColor = "";
+
+				}
+				
+		</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
