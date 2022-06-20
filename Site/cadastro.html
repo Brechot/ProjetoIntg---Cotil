@@ -149,7 +149,7 @@
 					<option selected value="0"></option>
 					<option value="1">Maculino</option>
 					<option value="2">Feminino</option>
-					<option value="3">Indeterminado</option>
+					<option value="3">Indefinido</option>
 		  		</select>
 		</div>
 	    </div>
@@ -161,7 +161,7 @@
 		</div>
 	    </div>
 		<div class="col-md-3">
-			Data de Nascimento:
+			Data de Nascimento(dd/mm/aaaa):
 			<div class="input-group mb-3">
 			  <span class="input-group-text" id="dataS">*</span>
 			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="data">
@@ -201,11 +201,11 @@
 	    </div>
 	  </div>
 	  <div class="row align-items-start csscadastro">
-		<div class="col-md-1">
-			<button type="button" class="btn btn-dark" onclick=Cadastrar();>Cadastrar</button>
+		<div class="col-md-2">
+			<button type="button" class="btn btn-secondary btn-lg" onclick=Cadastrar();>Cadastrar</button>
 		  </div>
-		  <div class="col-md-1">
-			<button type="reset" class="btn btn-dark" onclick=Limpar();>Limpar</button>
+		  <div class="col-md-2">
+			<button type="reset" class="btn btn-secondary btn-lg" onclick=Limpar();>Limpar</button>
 		  </div>
 		  <div class="col-md-2">
 			  <sub><i>(*) Campos Obrigatórios</i></sub>
@@ -439,7 +439,7 @@
 					if(nome!=0 && sobre!=0 && email!=0 && endereco!=0 && cep!=0 && idade>=18 && cpf!=0 && sexo!=0 && rg!=0 && data!=0 && tel1!=0 && senha!=0 && csenha!=0 && senha==csenha){
 					swal({
 					title: "Cadastro Realizado!",
-					text: "Você sera direcionado para Home",
+					text: "Seu Cadastro foi efetuado com sucesso!",
 					icon: "success",
 					button: "Continuar"
 					});
