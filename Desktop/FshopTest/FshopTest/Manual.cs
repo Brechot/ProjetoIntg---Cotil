@@ -11,10 +11,10 @@ using System.Threading;
 
 namespace FshopTest
 {
-    public partial class Fornecedores : Form
+    public partial class Manual : Form
     {
-        Thread nt1;
-        public Fornecedores()
+        Thread nt;
+        public Manual()
         {
             InitializeComponent();
         }
@@ -22,9 +22,9 @@ namespace FshopTest
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            nt1 = new Thread(formMenu);
-            nt1.SetApartmentState(ApartmentState.STA);
-            nt1.Start();
+            nt = new Thread(formMenu);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
         }
 
         private void formMenu()
@@ -34,7 +34,7 @@ namespace FshopTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cadastro salvo com sucesso!", "Salvo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Solicitação enviada com sucesso! Ordem gerada XXX.XXX", "Enviado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

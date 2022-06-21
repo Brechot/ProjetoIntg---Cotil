@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("FshopTest")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Ajuda")]
+[assembly: AssemblyDescription("A Fshop busca implantar a facilidade para as compras sobre vestuários ao usuário, transmitindo mais conforto aos clientes e agilidade aos funcionários.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FshopTest")]
+[assembly: AssemblyCompany("FShop")]
+[assembly: AssemblyProduct("FShopSystem")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("FShop/COTIL")]
 [assembly: AssemblyCulture("")]
 
 // Definir ComVisible como false torna os tipos neste assembly invisíveis

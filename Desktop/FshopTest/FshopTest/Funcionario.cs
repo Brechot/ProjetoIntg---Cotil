@@ -36,5 +36,10 @@ namespace FshopTest
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cadastro salvo com sucesso!", "Salvo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

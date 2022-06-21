@@ -58,5 +58,24 @@ namespace FshopTest
         {
             Application.Run(new Funcionario());
         }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt1 = new Thread(formManual);
+            nt1.SetApartmentState(ApartmentState.STA);
+            nt1.Start();
+        }
+
+        private void formManual()
+        {
+            Application.Run(new Manual());
+        }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ajuda about = new Ajuda();
+            about.ShowDialog();
+        }
     }
 }

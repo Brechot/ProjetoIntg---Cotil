@@ -30,7 +30,7 @@ namespace FshopTest
             }
             else
             {
-                MessageBox.Show("Login ou Senha inválidos!");
+                MessageBox.Show("Login ou Senha inválidos!","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
