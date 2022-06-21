@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FshopTest"
+    "\\FshopTest",
+    "\\FshopTest\\bin",
+    "\\FshopTest\\bin\\Debug"
   ],
-  "SelectedNode": "\\FshopTest\\Cliente.cs",
+  "SelectedNode": "\\FshopTest\\Fornecedores.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
