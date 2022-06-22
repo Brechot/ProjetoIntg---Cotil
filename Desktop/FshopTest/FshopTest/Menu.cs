@@ -77,5 +77,31 @@ namespace FshopTest
             Ajuda about = new Ajuda();
             about.ShowDialog();
         }
+
+        private void históricoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt1 = new Thread(formHistorico);
+            nt1.SetApartmentState(ApartmentState.STA);
+            nt1.Start();
+        }
+
+        private void formHistorico()
+        {
+            Application.Run(new Histórico());
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt1 = new Thread(formEstoque);
+            nt1.SetApartmentState(ApartmentState.STA);
+            nt1.Start();
+        }
+
+        private void formEstoque()
+        {
+            Application.Run(new Estoque());
+        }
     }
 }

@@ -59,6 +59,12 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque.Designer.cs">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="Funcionario.Designer.cs">
       <DependentUpon>Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histórico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Histórico.Designer.cs">
+      <DependentUpon>Histórico.cs</DependentUpon>
     </Compile>
     <Compile Include="Manual.cs">
       <SubType>Form</SubType>
@@ -97,6 +109,9 @@
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estoque.resx">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionario.resx">
       <DependentUpon>Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histórico.resx">
+      <DependentUpon>Histórico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manual.resx">
       <DependentUpon>Manual.cs</DependentUpon>
