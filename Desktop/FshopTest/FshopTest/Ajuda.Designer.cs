@@ -73,7 +73,7 @@
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
             this.logoPictureBox.Size = new System.Drawing.Size(131, 259);
-            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
             // 
@@ -127,6 +127,7 @@
             // 
             // textBoxDescription
             // 
+            this.textBoxDescription.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDescription.Location = new System.Drawing.Point(143, 107);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
@@ -155,6 +156,7 @@
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(435, 283);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
