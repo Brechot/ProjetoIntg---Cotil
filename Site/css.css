@@ -212,3 +212,10 @@ body{
 .csscadastro{
 	padding-top: 9vh;
 }
+
+.ceo{
+	width: 65vw;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;	
+}
