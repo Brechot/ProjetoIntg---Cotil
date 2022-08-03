@@ -25,6 +25,22 @@ body{
   background-color:whitesmoke;
 }
 
+.iconx a:link {
+	color:white;
+	text-decoration:none;
+  }
+.iconx a:visited {
+	color:white;
+	text-decoration:none;
+  }
+.iconx a:hover {
+	color: gray !important;
+  }
+.iconx a:active {
+	color:white;
+	background-color:whitesmoke;
+  }
+
 .logo a:link {
   color:white;
   text-decoration:none;
@@ -89,6 +105,10 @@ body{
 .icon{
 	display: flex;
 	align-items: center;
+}
+
+.iconx{
+	padding-left: 40px ;
 }
 
 .cssprod{
@@ -218,4 +238,9 @@ body{
 	height: 400px;
 	display: flex;
 	justify-content: space-around;	
+}
+
+p::selection {
+	background-color: black;
+	color: white;
 }
