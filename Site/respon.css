@@ -1,3 +1,12 @@
+@media (max-width:767px){
+.cel{
+		
+	}
+	.ceo{
+		width: 200px;
+		height: 200px;
+	}
+}
 @media (max-width:900px){
 
 	.icon{
@@ -17,7 +26,10 @@
 	.amarelo2{
 		font-size: 30px;
 	}
-	
+		.ceo{
+		max-width: 250px;
+		max-height: 250px;
+	}
 }
 
 @media (max-width:1100px){
@@ -45,4 +57,10 @@
 		height: 0%;
 		width: 45%;
 	}
+
+	.ceo{
+		width: 400px;
+		height: 400px;
+	}
+
 }
