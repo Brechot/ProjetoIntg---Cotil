@@ -264,3 +264,7 @@ p::selection {
 	margin-left: auto;
     margin-right: auto;
 }
+
+.btn-dark{
+	margin-top: 5px;
+}
