@@ -6,6 +6,22 @@
 		width: 200px;
 		height: 200px;
 	}
+
+	.carrin{
+		flex-direction: column;
+		border-right-style: none;
+		font-size: 16px;
+	}
+
+	.imgcar{
+		width: 110px;
+		height: 110px;
+	}
+
+	.bord{
+		border-bottom: solid 1px;
+		border-color: black;
+	}
 }
 @media (max-width:900px){
 
@@ -29,6 +45,11 @@
 		.ceo{
 		max-width: 250px;
 		max-height: 250px;
+	}
+
+	.carrin{
+		flex-direction: column;
+		border-right-style: none;
 	}
 }
 
@@ -62,5 +83,6 @@
 		width: 400px;
 		height: 400px;
 	}
+
 
 }

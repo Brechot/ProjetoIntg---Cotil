@@ -115,12 +115,7 @@ body{
 	padding-top: 1.95em;
 	padding-bottom: 1.95em;
 	text-align: center;
-
-	
-
-		}
-
-
+}
 
 .footer{
 	background-color:rgb(41, 41, 41) ;
@@ -203,7 +198,6 @@ body{
 	background-color: red;
 	top: -10px;
 	overflow: hidden;
-
 }
 
 .login{
@@ -268,3 +262,33 @@ p::selection {
 .btn-dark{
 	margin-top: 5px;
 }
+
+::-webkit-scrollbar {
+	width: 14px;
+	background-color: black;
+	color: gray;
+}
+
+.carrin{
+	padding-top: 5vh;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgcar{
+	 width: 150px;
+	height: 150px;
+}
+
+.remv a:link {
+	color:red;
+	
+  }
+  .remv a:visited {
+	color:red;
+	
+  }
+  .remv a:hover {
+	color: darkred !important;
+  }
