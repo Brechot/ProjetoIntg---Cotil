@@ -281,6 +281,10 @@ p::selection {
 	height: 150px;
 }
 
+.bord{
+	border: 1px solid black;
+}
+
 .remv a:link {
 	color:red;
 	
