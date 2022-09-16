@@ -1,85 +1,93 @@
-@media (max-width:767px){
-.cel{
-		
-	}
-	.ceo{
+@media (max-width:767px) {
+	.cel {}
+
+	.ceo {
 		width: 200px;
 		height: 200px;
 	}
 
-	.carrin{
+	.carrin {
 		flex-direction: column;
 		border-right-style: none;
 		font-size: 16px;
 	}
 
-	.imgcar{
+	.imgcar {
 		width: 110px;
 		height: 110px;
 	}
 
-	.bord{
+	.bord {
 		border-bottom: solid 1px;
 		border-color: black;
 	}
 }
-@media (max-width:900px){
 
-	.icon{
-		
+@media (max-width:900px) {
+
+	.icon {
+
 		display: none;
 	}
-	.azul{
+
+	.azul {
 		display: none;
 	}
-	.amarelo1{
-	/*background-color: yellow;*/
-	width: 100vw;
-	height: 9vh;
-	display: flex;
-	align-items: center;
+
+	.amarelo1 {
+		/*background-color: yellow;*/
+		width: 100vw;
+		height: 9vh;
+		display: flex;
+		align-items: center;
 	}
-	.amarelo2{
+
+	.amarelo2 {
 		font-size: 30px;
 	}
-		.ceo{
+
+	.ceo {
 		max-width: 250px;
 		max-height: 250px;
 	}
 
-	.carrin{
+	.carrin {
 		flex-direction: column;
 		border-right-style: none;
 	}
 }
 
-@media (max-width:1100px){
+@media (max-width:1100px) {
 
-	.srch{
-		display: none;
-	}
-	.about{
+	.srch {
 		display: none;
 	}
 
-	.remover{
+	.about {
 		display: none;
 	}
-	.central{
+
+	.remover {
+		display: none;
+	}
+
+	.central {
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 8px;
 	}
-	.login{
+
+	.login {
 		flex-direction: column;
 	}
-	.risco{
+
+	.risco {
 		width: 1px;
 		height: 0%;
 		width: 45%;
 	}
 
-	.ceo{
+	.ceo {
 		width: 400px;
 		height: 400px;
 	}
