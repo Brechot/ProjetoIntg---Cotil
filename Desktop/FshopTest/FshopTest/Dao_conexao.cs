@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace FshopTest
 {
-    class Down_Conexao
+    class Dao_conexao
     {
         private static MySqlConnection con;
 
@@ -41,7 +42,7 @@ namespace FshopTest
             try
             {
                 con.Open();
-                MySqlCommand login = new MySqlCommand("Select * from Estudio_Login where user ='" + usuario + "' and password ='" + senha + "'", con);
+                MySqlCommand login = new MySqlCommand("Select * from projintFuncionario where cpf ='" + usuario + "' and contato ='" + senha + "'", con);
                 MySqlDataReader resultado = login.ExecuteReader();
                 if (resultado.Read())
                 {
@@ -65,7 +66,7 @@ namespace FshopTest
             try
             {
                 con.Open();
-                MySqlCommand login = new MySqlCommand("Select * from Estudio_Login where user ='" + usuario + "'", con);
+                MySqlCommand login = new MySqlCommand("Select * from Estudio_Login where cpf ='" + usuario + "'", con);
                 MySqlDataReader resultado = login.ExecuteReader();
                 if (resultado.Read())
                 {
