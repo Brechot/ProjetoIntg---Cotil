@@ -17,6 +17,11 @@ namespace FshopTest
         public Form1()
         {
             InitializeComponent();
+
+            if (Dao_Conexao.GetConexao("143.106.241.3", "cl201447", "cl201447", "cl*14062003"))
+                Console.WriteLine("Conectado");
+            else
+                Console.WriteLine("Erro de conexão");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,5 +43,7 @@ namespace FshopTest
         {
             Application.Run(new Menu());
         }
+
+
     }
 }
