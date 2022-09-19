@@ -63,15 +63,30 @@ namespace FshopTest
             // nt.Start();
             //}
             //else
-            if (Login()){
+            int tipo = Dao_conexao.Login(tbLogin.Text, tbSenha.Text);
+            if (tipo == 0)
+            {
+                MessageBox.Show("Login ou Senha inválidos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (tipo == 1)
+            {
+                // groupBox1.Visible = false;
+                // menuStrip1.Visible = true;
+                // menuStrip1.Enabled = true;
                 this.Close();
                 nt = new Thread(formMenu);
                 nt.SetApartmentState(ApartmentState.STA);
                 nt.Start();
             }
 
-            else{
-                MessageBox.Show("Login ou Senha inválidos!","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            if (tipo == 2)
+            {
+
+               // groupBox1.Visible = false;
+               // menuStrip1.Visible = true;
+               // menuStrip1.Enabled = true;
+               // cadastrarAlunoToolStripMenuItem.Enabled = false;
             }
         }
 
