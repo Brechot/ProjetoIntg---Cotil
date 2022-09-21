@@ -14,10 +14,6 @@ namespace FshopTest
 {
     public partial class Form1 : Form
     {
-        String usuario, senha;
-
-        private static MySqlConnection con;
-
         Thread nt;
         public Form1()
         {
@@ -29,31 +25,12 @@ namespace FshopTest
                 Console.WriteLine("Erro de conexão");
         }
 
-        public static int Login(String usuario, String senha)
+        private void formMenu()
         {
-            int tipo = 0; //0 quando não encontra
-            try
-            {
-                con.Open();
-                MySqlCommand login = new MySqlCommand("Select * from projintFuncionario where cpf ='" + usuario + "' and contato ='" + senha + "'", con);
-                MySqlDataReader resultado = login.ExecuteReader();
-                if (resultado.Read())
-                {
-                    tipo = Convert.ToInt32(resultado["type"].ToString());
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            finally
-            {
-                con.Close();
-            }
-            return tipo;
+            Application.Run(new Menu());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
             // if(tbLogin.Text=="Henrique" && tbSenha.Text == "1234")
             //{
@@ -78,23 +55,19 @@ namespace FshopTest
                 nt = new Thread(formMenu);
                 nt.SetApartmentState(ApartmentState.STA);
                 nt.Start();
+                //var menu = new Menu();
+                //this.Hide();
+                //menu.Show();
             }
 
             if (tipo == 2)
             {
 
-               // groupBox1.Visible = false;
-               // menuStrip1.Visible = true;
-               // menuStrip1.Enabled = true;
-               // cadastrarAlunoToolStripMenuItem.Enabled = false;
+                // groupBox1.Visible = false;
+                // menuStrip1.Visible = true;
+                // menuStrip1.Enabled = true;
+                
             }
         }
-
-        private void formMenu()
-        {
-            Application.Run(new Menu());
-        }
-
-
     }
 }

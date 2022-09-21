@@ -42,7 +42,7 @@ namespace FshopTest
             try
             {
                 con.Open();
-                MySqlCommand login = new MySqlCommand("Select * from projintFuncionario where cpf ='" + usuario + "' and contato ='" + senha + "'", con);
+                MySqlCommand login = new MySqlCommand("Select * from projintLogin where user ='" + usuario + "' and password ='" + senha + "'", con);
                 MySqlDataReader resultado = login.ExecuteReader();
                 if (resultado.Read())
                 {
@@ -66,7 +66,7 @@ namespace FshopTest
             try
             {
                 con.Open();
-                MySqlCommand login = new MySqlCommand("Select * from Estudio_Login where cpf ='" + usuario + "'", con);
+                MySqlCommand login = new MySqlCommand("Select * from projintFuncionario where cpf ='" + usuario + "'", con);
                 MySqlDataReader resultado = login.ExecuteReader();
                 if (resultado.Read())
                 {
