@@ -84,11 +84,11 @@ namespace FshopTest
             return igual;
         }
 
-        public static string CadastrarCliente(int rg, String nome, int cep, Char sexo, String endereco, String bairro, int contato, int numero, String estado , String municipio, String email)
-        {
-            con.Open();
-            MySqlCommand cadastracli = new MySqlCommand("Select * from projintLogin where user ='" + usuario + "' and password ='" + senha + "'", con);
-        }      //INSERT INTO `cl200469`.`projintCliente` (`rg`, `nome`, `email`, `sexo`, `cep`, `numero`, `rua`, `cidade`, `estado`, `contato`) VALUES ('48940574842', 'Henrique', 'henrique@gmail.com', 'M', '13490009', '254', 'Vargas', 'Cordeirópolis', 'SP', '998401344');
+       // public static string CadastrarCliente(int rg, String nome, int cep, Char sexo, String endereco, String bairro, int contato, int numero, String estado , String municipio, String email)
+       // {
+       //     con.Open();
+       //     MySqlCommand cadastracli = new MySqlCommand("Select * from projintLogin where user ='" + usuario + "' and password ='" + senha + "'", con);
+       // }      //INSERT INTO `cl200469`.`projintCliente` (`rg`, `nome`, `email`, `sexo`, `cep`, `numero`, `rua`, `cidade`, `estado`, `contato`) VALUES ('48940574842', 'Henrique', 'henrique@gmail.com', 'M', '13490009', '254', 'Vargas', 'Cordeirópolis', 'SP', '998401344');
 
     }
 }
