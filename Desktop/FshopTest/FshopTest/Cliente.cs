@@ -39,7 +39,14 @@ namespace FshopTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cadastro salvo com sucesso!", "Salvo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+
+            ClienteClasse cliente = new ClienteClasse(txtNome.Text, txtEndereco.Text, txtBairro.Text, txtEstado.Text, txtMunicipio.Text, txtEmail.Text, radioButton1.Text, txtRg.Text, txtCep.Text, txtContato.Text, txtNumero.Text); ;
+            if (cliente.cadastrarCliente())
+                MessageBox.Show("Cadastro salvo com sucesso!", "Salvo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Erro de cadastro!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error) ;
+            
         }
     }
 }

@@ -13,7 +13,7 @@ namespace FshopTest
 {
     class Dao_conexao
     {
-        private static MySqlConnection con;
+        public static MySqlConnection con;
 
         public static Boolean GetConexao(String local, String banco, String user, String senha)
         {
@@ -84,11 +84,28 @@ namespace FshopTest
             return igual;
         }
 
-       // public static string CadastrarCliente(int rg, String nome, int cep, Char sexo, String endereco, String bairro, int contato, int numero, String estado , String municipio, String email)
-       // {
-       //     con.Open();
-       //     MySqlCommand cadastracli = new MySqlCommand("Select * from projintLogin where user ='" + usuario + "' and password ='" + senha + "'", con);
-       // }      //INSERT INTO `cl200469`.`projintCliente` (`rg`, `nome`, `email`, `sexo`, `cep`, `numero`, `rua`, `cidade`, `estado`, `contato`) VALUES ('48940574842', 'Henrique', 'henrique@gmail.com', 'M', '13490009', '254', 'Vargas', 'Cordeirópolis', 'SP', '998401344');
+        public static Boolean cadastrarCliente(String nome, String endereco, String bairro, String estado, String municipio, String email, String sexo, String rg, String cep, String contato, String numero)
+        {
+            bool cad = false;
+
+            try
+            {
+                con.Open();
+                MySqlCommand insere = new MySqlCommand("INSERT INTO projintCliente (nome, endereco, bairro, estado, municipio, email, sexo, rg, cep, contato, numero) VALUES ('" + nome + "','" + endereco + "','" + estado + "', '" + municipio + "','" + email + "','" + sexo + "'," + rg + "," + cep + "," + contato + "," + numero + ")", con);
+                insere.ExecuteNonQuery();
+                cad = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cad;
+
+        }    
 
     }
 }

@@ -62,6 +62,7 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClienteClasse.cs" />
     <Compile Include="Dao_conexao.cs" />
     <Compile Include="Estoque.cs">
       <SubType>Form</SubType>
