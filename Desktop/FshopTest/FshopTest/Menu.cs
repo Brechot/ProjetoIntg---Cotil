@@ -103,5 +103,18 @@ namespace FshopTest
         {
             Application.Run(new Estoque());
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt1 = new Thread(formCadLogin);
+            nt1.SetApartmentState(ApartmentState.STA);
+            nt1.Start();
+        }
+
+        private void formCadLogin()
+        {
+            Application.Run(new CadLogin());
+        }
     }
 }

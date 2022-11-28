@@ -78,3 +78,4 @@ C:\Users\Henrique.Brechot\ProjetoIntg\ProjetoIntg\Desktop\FshopTest\FshopTest\bi
 C:\Users\Henrique.Brechot\ProjetoIntg\ProjetoIntg\Desktop\FshopTest\FshopTest\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\Henrique.Brechot\ProjetoIntg\ProjetoIntg\Desktop\FshopTest\FshopTest\bin\Debug\MySql.Data.xml
 C:\Users\Henrique.Brechot\ProjetoIntg\ProjetoIntg\Desktop\FshopTest\FshopTest\obj\Debug\FshopTest.csproj.CopyComplete
+C:\Users\Henrique.Brechot\ProjetoIntg\ProjetoIntg\Desktop\FshopTest\FshopTest\obj\Debug\FshopTest.CadLogin.resources

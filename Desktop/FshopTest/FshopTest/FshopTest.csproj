@@ -56,6 +56,12 @@
     <Compile Include="Ajuda.Designer.cs">
       <DependentUpon>Ajuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadLogin.Designer.cs">
+      <DependentUpon>CadLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ajuda.resx">
       <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadLogin.resx">
+      <DependentUpon>CadLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
