@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" type="text/css" href="css.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css.css">
 			<link rel="stylesheet" type="text/css" href="respon.css">
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 				<script src="https://kit.fontawesome.com/9fefcf6978.js" crossorigin="anonymous"></script>
 	<title>Cadastro</title>
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+		<style type="text/css">
+			
+			#sucess{
+				color: green;
+				font-weight: bold;
+			}
+
+			#error{
+				color: red;
+				font-weight: bold;
+			}
+
+		</style>
+	</head>
+
+
 		
+
 </head>
 <body class="bkg">
 	<div class="principal">
@@ -91,7 +109,7 @@
 							</a>
 						</div>
 						<div class="icon">
-							<a href="Login.html">
+							<a href="Login.php">
 								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
 								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
 								<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
@@ -109,129 +127,86 @@
 			</div>
 		</div>
 
-		<!-- body -->
+		
+
+		<form method="post" enctype="multipart/form-data">
 
 <div class="estica">
 	<div class="container" style="margin-top: 40px;">
 	<form>
 	  <div class="row align-items-start csscadastro">
 	    <div class="col-md-3">
-	    	Nome:<br>
+	    	Nome Completo:<br>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="nomeS">*</span>
-				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="nome">
+				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="nome" name="nome">
 			  </div>
 	    </div>
-	    <div class="col-md-3">
-	      Sobrenome:<br>
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="sobreS">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="sobre">
-		  </div>
-	    </div>
-	    <div class="col-md-4">
-	      E-mail:<br>
+	     <div class="col-md-4">
+		E-mail:<br>
 		  <div class="input-group mb-3">
 			<span class="input-group-text" id="emailS">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email">
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email" name="email">
 		  </div>
 	    </div>
 	  </div>
-	  <div class="row align-items-start csscadastro">
-	    <div class="col-md-4">
-	      Endereço:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="enderecoS">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="endereco">
-		  </div>
-	    </div>
-	    <div class="col-md-2">
-	      CEP:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="cepS">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="cep">
-		  </div>
-	    </div>
-	    <div class="col-md-2">
-	      Idade:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="idadeS">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="idade">
-		  </div>
-	    </div>
-	  </div>
-	  <div class="row align-items-start csscadastro">
-	    <div class="col-md-2">
-	    CPF:	
-	      <div class="input-group mb-3">
-		  <span class="input-group-text" id="cpfS">*</span>
-		  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="cpf">
-		</div>
 
-	  </div>
-	  <div class="col-md-2">
+			 <div class="row align-items-start csscadastro">
+	    <div class="col-md-4">
+	      Senha:
+		  <div class="input-group mb-3">
+			<span class="input-group-text" id="senhaS">*</span>
+			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="senha" name="senha">
+		  </div>
+	    </div>
+
+
+		 <div class="col-md-2">
 	    Sexo:
 	    <div class="input-group mb-3">
 			<label class="input-group-text" for="inputGroupSelect01" id="sexoS">*<!-- C/Obrigatório--></label>
-				<select class="form-select" id="sexo">
+				<select class="form-select" id="sexo" name="sexo">
 					<option selected value="0"></option>
-					<option value="1">Maculino</option>
-					<option value="2">Feminino</option>
-					<option value="3">Indefinido</option>
+					<option value="Masculino">Maculino</option>
+					<option value="Feminino">Feminino</option>
+					<option value="Indefinido">Indefinido</option>
 		  		</select>
 		</div>
 	    </div>
-	    <div class="col-md-2">
-	   	RG:
+		 <div class="col-md-2">
+		RG:
 	    <div class="input-group mb-3">
   			<span class="input-group-text" id="rgS">*</span>
-  			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="rg">
+  			<input type="text" size="5" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="rg" name="rg">
 		</div>
 	    </div>
-		<div class="col-md-3">
+
+	    <div class="col-md-3">
 			Data de Nascimento(dd/mm/aaaa):
 			<div class="input-group mb-3">
 			  <span class="input-group-text" id="dataS">*</span>
-			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="data">
+			  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="data" name="data">
 		</div>
 		  </div>
 	  </div>
+
 	  <div class="row align-items-start csscadastro">
 	    <div class="col-md-3">
 	      Telefone 1:
 		  <div class="input-group mb-3">
 			<span class="input-group-text" id="tel1S">*</span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="tel1">
+			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="tel1" name="tel1">
 	  </div>
 	    </div>
+	    <div class="row align-items-start csscadastro">
 	    <div class="col-md-3">
-	      Telefone 2:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="tel2S"></span>
-			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="tel2">
-	  </div>
-	    </div>
-	  </div>
-	  <div class="row align-items-start csscadastro">
-	    <div class="col-md-4">
-	      Senha:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="senhaS">*</span>
-			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="senha">
-		  </div>
-	    </div>
-	    <div class="col-md-4">
-	      Confirmar Senha:
-		  <div class="input-group mb-3">
-			<span class="input-group-text" id="csenhaS">*</span>
-			<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="csenha">
-		  </div>
-	    </div>
-	  </div>
-	  <div class="row align-items-start csscadastro">
-		<div class="col-md-2">
-			<button type="button" class="btn btn-dark" onclick=Cadastrar();>Cadastrar</button>
-		  </div>
+			Foto:<br>
+			<input type="file" name="foto" accept="image/gif, image/png, image/jpg, image/jpeg"> 
+			<br><br>
+			<input type="submit" onclick=Cadastrar() value="Cadastrar" class="btn-dark">
+
+
+		
 		  <div class="col-md-2">
 			<button type="reset" class="btn btn-dark" onclick=Limpar();>Limpar</button>
 		  </div>
@@ -239,57 +214,9 @@
 			  <sub><i>(*) Campos Obrigatórios</i></sub>
 			</div>
 	  </div>
-  </div>
-</form>		
-</div>
-
-	<!-- footer-->
-
-	<div class="footer">
-			<div class="vermelho central">
-				<div>
-				<p>Copyright<sup>©</sup> 2022
-				</p>
-				</div>
-			</div>
-			<div class="vermelho remover">
-				<div class="icon">
-					<a href="index.html">Home</a>
-				</div>
-				<div class="icon">
-					<a href="contato.html">Contato</a>
-				</div>
-				<div class="icon">
-					<a href="promocoes.html">Promoções</a>
-				</div>
-			</div>
-			<div class="vermelho remover">
-				<div class="icon">
-					<a href="https://pt-br.facebook.com/" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-						  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-						</svg>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="https://www.instagram.com/" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-						  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-						</svg>
-					</a>
-				</div>
-				<div class="icon">
-					<a href="https://twitter.com/" target="_blank">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-						  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</body>
+			<hr>
+		</form>
+	</body>
 <script type="text/javascript" src="jq/jquery-3.6.0.js"></script>
 		<script type="text/javascript" src="jq/jquery.mask.js"></script>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -340,7 +267,7 @@
 				var csenha = document.getElementById("csenha").value;
 				
 				
-					if(nome==0){
+					if(nome==""){
 						
 						document.getElementById("nomeS").innerHTML = "❌"
 						document.getElementById("nomeS").style.borderColor = "red";
@@ -529,4 +456,131 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+
+
 </html>
+
+
+<?php
+
+	define('TAMANHO_MAXIMO', (2 * 1024 * 1024));
+
+	if($_SERVER["REQUEST_METHOD"] === 'POST'){
+
+		
+
+		try{
+			include("conexaoBD.php");
+
+			//usuario
+			$email = $_POST["email"];
+			$senha = $_POST['senha'];
+			$sexo = $_POST['sexo'];
+			$nome = $_POST['nome'];
+			$rg = $_POST['rg'];
+			$data = $_POST['data'];
+			$tel1 = $_POST['tel1'];
+
+				//foto
+			$foto = $_FILES['foto'];
+			$nomeFoto = $foto['name'];
+			$tipoFoto = $foto['type'];
+			$tamanhoFoto = $foto['size'];
+
+
+			
+
+			if ((trim($email) == "")) {
+				echo "<span id='error'>Informe um email válido!</span>";
+			}
+
+			else if ((trim($senha) == "")){
+				echo "<span id='error'>Senha é obrigatório!</span>";
+			}
+
+			else if ((trim($sexo) == "")){
+				echo "<span id='error'>Sexo é obrigatório!</span>";
+			}
+
+			else if ((trim($nome) == "")){
+				echo "<span id='error'>Nome é obrigatório!</span>";
+			}
+
+			else if ((trim($rg) == "")){
+				echo "<span id='error'>RG é obrigatório!</span>";
+			}
+
+			else if ((trim($data) == "")){
+				echo "<span id='error'>Insira uma Data de Nascimento válida!</span>";
+			}
+
+			else if ((trim($tel1) == "")){
+				echo "<span id='error'>Infomre um número de telefone válido!</span>";
+			}
+
+
+
+
+
+
+
+
+			
+
+
+			
+
+
+			
+
+			else{
+				//verificando se o RA informando já existe no BD para não dar exception
+				$stmt = $pdo->prepare("select * from usuarioFshop where email = :email");
+				$stmt->bindParam(':email',$email);
+				$stmt->execute();
+
+				$rows = $stmt->rowCount();
+
+				if($rows <= 0){
+
+					if($nomeFoto == "")
+					{
+
+						$fotoBinario == null;
+
+					}
+
+					else
+					{
+
+						//Lendo o conteudo do arquivo para uma var
+						$fotoBinario = file_get_contents($foto['tmp_name']);
+					}
+
+					$stmt = $pdo->prepare("insert into usuarioFshop(email,senha,sexo,foto,nome,rg,data,telefone) values(:email, :senha, :sexo, :foto, :nome, :rg, :data, :tel1)");
+					$stmt->bindParam(':email',$email);
+					$stmt->bindParam(':senha',$senha);
+					$stmt->bindParam(':sexo',$sexo);
+					$stmt->bindParam(':foto',$fotoBinario);
+					$stmt->bindParam(':nome',$nome);
+					$stmt->bindParam(':rg',$rg);
+					$stmt->bindParam(':data',$data);
+					$stmt->bindParam(':tel1',$tel1);
+					$stmt->execute();
+
+					echo "<span id='sucess'>Conta criada com sucesso!</span>";
+				} else{
+					echo"<span id='error'> Email já cadastrado!</span>";
+				}
+			}
+		}
+
+		catch(PDOException $e) {
+            echo 'Error: ' . $e->getMessage();
+        }
+
+        $pdo = null;
+    	}
+	
+
+?>
